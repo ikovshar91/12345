@@ -10,10 +10,10 @@ public class Book{
     }
 
     public static void print(int x){
-        System.out.print(x);
+        System.out.println(x);
     }
     public static void print(String s){
-        System.out.print(s);
+        System.out.println(s);
     }
     public static void print(){
         System.out.println();
