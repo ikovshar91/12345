@@ -23,8 +23,7 @@ public class FilledList<T> {
         return result;
     }
 
-    public static void main(String[] args)
-            throws InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         FilledList<CountedInteger> f1 = new FilledList<>(CountedInteger.class);
         System.out.println(f1.create(15));
 
