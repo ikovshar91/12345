@@ -8,6 +8,7 @@ public class TypeCounter extends HashMap<Class<?>,Integer>{
   public TypeCounter(Class<?> baseType) {
     this.baseType = baseType;
   }
+
   public void count(Object obj) {
     Class<?> type = obj.getClass();
     if(!baseType.isAssignableFrom(type))
