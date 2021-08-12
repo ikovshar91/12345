@@ -1,5 +1,4 @@
 package typeinfo.pets;
-
 import java.util.HashMap;
 
 public class PetCount {
@@ -17,31 +16,31 @@ public class PetCount {
 
 public static void countPets(PetCreator creator){
     PetCounter counter = new PetCounter();
-    for (Pet pet : creator.createArray(20)){
-        System.out.print(pet.getClass().getSimpleName()+" ");
+    for (Pet pet : creator.createArray(20)) {
+        System.out.print(pet.getClass().getSimpleName() + " ");
         if (pet instanceof Pet)
             counter.count("Pet");
-        if(pet instanceof Dog)
+        if (pet instanceof Dog)
             counter.count("Dog");
         if (pet instanceof Mutt)
             counter.count("Mutt");
-        if(pet instanceof Pug)
+        if (pet instanceof Pug)
             counter.count("Pug");
-        if(pet instanceof Cat)
+        if (pet instanceof Cat)
             counter.count("Cat");
-        if(pet instanceof Manx)
+        if (pet instanceof Manx)
             counter.count("EgyptianMau");
-        if(pet instanceof Manx)
+        if (pet instanceof Manx)
             counter.count("Manx");
-        if(pet instanceof Manx)
+        if (pet instanceof Manx)
             counter.count("Cymric");
-        if(pet instanceof Rodent)
+        if (pet instanceof Rodent)
             counter.count("Rodent");
-        if(pet instanceof Rat)
+        if (pet instanceof Rat)
             counter.count("Rat");
-        if(pet instanceof Mouse)
+        if (pet instanceof Mouse)
             counter.count("Mouse");
-        if(pet instanceof Hamster)
+        if (pet instanceof Hamster)
             counter.count("Hamster");
     }
 
